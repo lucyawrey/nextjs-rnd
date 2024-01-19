@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check-types": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "migrate": "tsx --env-file=.env.development src/migrations/migrationScript.ts --latest",
     "migrate:up": "tsx --env-file=.env.development src/migrations/migrationScript.ts --up",
     "migrate:down": "tsx --env-file=.env.development src/migrations/migrationScript.ts --down"
