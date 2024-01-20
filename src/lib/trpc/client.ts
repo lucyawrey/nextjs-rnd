@@ -1,11 +1,13 @@
-import { httpBatchLink } from "@trpc/client";
+import { createCallerFactory } from "@trpc/server/dist/unstable-core-do-not-import/router";
+import { createTRPCReact } from "@trpc/react-query";
+import { type AppRouter, appRouter } from "lib/trpc";
 
-import { appRouter } from "lib/trpc";
+const createCaller = createCallerFactory()<AppRouter>(appRouter);
 
-export const serverClient = appRouter.createCaller({
-  links: [
-    httpBatchLink({
-      url: "http://localhost:3000/api/trpc",
-    }),
-  ],
-});
+export function getServerClient(request: Request) {
+  return createCaller({ req: request, resHeaders: new Headers() });
+}
+
+// Pass AppRouter as generic here. This lets the `trpc` object know
+// what procedures are available on the server and their input/output types.
+export const client = createTRPCReact<AppRouter>({});
