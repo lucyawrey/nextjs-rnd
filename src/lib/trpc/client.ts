@@ -4,10 +4,10 @@ import { type AppRouter, appRouter } from "lib/trpc";
 
 const createCaller = createCallerFactory()<AppRouter>(appRouter);
 
-export function getServerClient(request: Request) {
+export function getServerTrpc(request: Request) {
   return createCaller({ req: request, resHeaders: new Headers() });
 }
 
 // Pass AppRouter as generic here. This lets the `trpc` object know
 // what procedures are available on the server and their input/output types.
-export const client = createTRPCReact<AppRouter>({});
+export const trpc = createTRPCReact<AppRouter>();
