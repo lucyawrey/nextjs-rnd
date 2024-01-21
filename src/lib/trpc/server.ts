@@ -4,6 +4,7 @@ import { initTRPC } from "@trpc/server";
 import { trpcUrl } from "utils/environment";
 import { type Context, createContext } from "lib/trpc/context";
 
+// replace with `const trpc = initTRPC.context<Context>().create();` if we want context.
 const trpc = initTRPC.context<Context>().create();
 
 // Base router and procedure helpers
