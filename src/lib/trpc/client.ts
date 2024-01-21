@@ -1,5 +1,5 @@
 import { createTRPCReact } from "@trpc/react-query";
-import { type AppRouter } from "lib/trpc";
+import { type AppRouter } from "lib/trpc/router";
 
 /**
  * trpc client used by React query in the browser and in next SSR.

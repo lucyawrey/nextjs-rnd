@@ -1,3 +1,3 @@
-import { handler } from "lib/trpc";
+import { fetchHandler } from "lib/trpc/fetchHandler";
 
-export { handler as GET, handler as POST };
+export { fetchHandler as GET, fetchHandler as POST };

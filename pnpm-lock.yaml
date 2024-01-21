@@ -11,9 +11,6 @@ dependencies:
   '@trpc/client':
     specifier: 11.0.0-next-beta.221
     version: 11.0.0-next-beta.221(@trpc/server@11.0.0-next-beta.221)
-  '@trpc/next':
-    specifier: 11.0.0-next-beta.221
-    version: 11.0.0-next-beta.221(@tanstack/react-query@5.17.15)(@trpc/client@11.0.0-next-beta.221)(@trpc/react-query@11.0.0-next-beta.221)(@trpc/server@11.0.0-next-beta.221)(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
   '@trpc/react-query':
     specifier: 11.0.0-next-beta.221
     version: 11.0.0-next-beta.221(@tanstack/react-query@5.17.15)(@trpc/client@11.0.0-next-beta.221)(@trpc/server@11.0.0-next-beta.221)(react-dom@18.2.0)(react@18.2.0)
@@ -583,31 +580,6 @@ packages:
       '@trpc/server': 11.0.0-next-beta.221+83786ca57
     dependencies:
       '@trpc/server': 11.0.0-next-beta.221
-    dev: false
-
-  /@trpc/next@11.0.0-next-beta.221(@tanstack/react-query@5.17.15)(@trpc/client@11.0.0-next-beta.221)(@trpc/react-query@11.0.0-next-beta.221)(@trpc/server@11.0.0-next-beta.221)(next@14.0.4)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-MYIBUxYifoVpV4vIF/OQv9R6pb95urAo3egFd7stiBBrF/VSjL5GKYadFbWG0UU4Sf9UNnQIWcHmw92lw704Eg==}
-    peerDependencies:
-      '@tanstack/react-query': ^5.0.0
-      '@trpc/client': 11.0.0-next-beta.221+83786ca57
-      '@trpc/react-query': 11.0.0-next-beta.221+83786ca57
-      '@trpc/server': 11.0.0-next-beta.221+83786ca57
-      next: '*'
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    peerDependenciesMeta:
-      '@tanstack/react-query':
-        optional: true
-      '@trpc/react-query':
-        optional: true
-    dependencies:
-      '@tanstack/react-query': 5.17.15(react@18.2.0)
-      '@trpc/client': 11.0.0-next-beta.221(@trpc/server@11.0.0-next-beta.221)
-      '@trpc/react-query': 11.0.0-next-beta.221(@tanstack/react-query@5.17.15)(@trpc/client@11.0.0-next-beta.221)(@trpc/server@11.0.0-next-beta.221)(react-dom@18.2.0)(react@18.2.0)
-      '@trpc/server': 11.0.0-next-beta.221
-      next: 14.0.4(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@trpc/react-query@11.0.0-next-beta.221(@tanstack/react-query@5.17.15)(@trpc/client@11.0.0-next-beta.221)(@trpc/server@11.0.0-next-beta.221)(react-dom@18.2.0)(react@18.2.0):
